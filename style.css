@@ -1,15 +1,13 @@
+html {
+	font-family: Arial,Sans-Serif;
+	font-size: small;
+}
+
 #hero {
 	padding-top: 109px;
 	display: block;
 	margin: 0 auto;
 	width: 272px;
-}
-
-body {
-	font-family: Arial,Sans-Serif;
-	font-size: small;
-	position: relative;
-	height: 100%;
 }
 
 form {
@@ -29,8 +27,12 @@ a:hover {
 }
 
 header {
-	position: relative;
-	top: 16px;
+	margin-top: 16px;
+	z-index: 100;
+}
+
+header a:hover {
+	opacity: 0.75;
 }
 
 footer {
@@ -40,7 +42,6 @@ footer {
 	position: absolute;
 	width: 100%;
 	line-height: 40px;
-	height: auto;
 	bottom: 0;
 }
 
@@ -51,16 +52,15 @@ footer a {
 
 li {
 	display: inline-block;
+	padding: 5px;
 }
 
 .left {
 	float: left;
-	margin-left: 30px;
 }
 
 .right {
 	float: right;
-	margin-right: 30px;
 }
 
 input[type="submit"] {
@@ -70,6 +70,7 @@ input[type="submit"] {
 	border-radius: 5px;
 	color: #5f6368;
 	cursor: pointer;
+	margin: 10px 5px;
 }
 
 input[type="submit"]:hover {
@@ -83,24 +84,16 @@ input[type="submit"]:hover {
 }
 
 main {
+  clear: both;
 	min-width: 980px;
 }
 
-main {
-	position: absolute;
-	width: 100%;
-	min-height: 100%;
-}
-
-html, body, main {
-	height: 100%;
-}
-
 .submitters {
-	top: 30px;
+	margin-top: 30px;
 	padding-top: 16px;
 	width: 570px;
 	margin: 0 auto;
+	font: 14px arial, sans-serif;
 }
 
 .fielddecorator {
@@ -110,9 +103,10 @@ html, body, main {
 	border: 1px solid #dfe1e5;
 	border-radius: 24px;
 	height: 44px;
-	margin-top: -20px;
+	margin-top: -8px;
 	padding: 0 16px;
 }
+
 #searchfield {
 	display: block;
 	margin: 0;
@@ -122,4 +116,24 @@ html, body, main {
 	line-height: 34px;
 	height: 34px;
 	width: 100%;
+}
+
+.right li {
+	margin-right: 15px;
+}
+
+.left li {
+	margin-left: 15px;
+}
+
+#signin {
+	background-color: #4285f4;
+	opacity: 1.0;
+	color: white;
+	line-height: 24px;
+	padding: 8px 12px;
+	font-weight: bold;
+	border: 1px solid #4285f4;
+	border-radius: 2px;
+	text-decoration: none;
 }
